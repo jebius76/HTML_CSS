@@ -1,0 +1,38 @@
+/* Crea un nuevo documento HTML con el título "Disposición de elementos en CSS"
+Crea un nuevo fichero CSS e impórtalo en el documento HTML principal
+Utiliza la disposición flex-box para crear una galería de 6 imágenes con los siguientes parámetros
+Las imágenes deben tener 300 píxeles de ancho
+Deben reagruparse (wrap) cuando el ancho del viewport cambia */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(108, 108, 163);
+}
+
+.imagenes {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdfdf;
+}
+
+.foto {
+    padding: 5px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.6;
+    /* height: 100px; */
+}
+.foto:hover {
+    opacity: 1;
+    cursor: pointer;
+}
