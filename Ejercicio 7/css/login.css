@@ -87,6 +87,11 @@ html{
     background-color: #56fa15;
 }
 
+.action button:active {
+    background-color: #217400;
+    transition: background-color 5ms;
+}
+
 .separator {
     display: flex;
     width: 100%;
